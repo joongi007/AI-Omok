@@ -1,0 +1,13 @@
+@import "options.css";
+@import "select.css";
+@import "select_rule.css";
+@import "board/board.css";
+@import "board/grid.css";
+
+body {
+  text-align: center;
+}
+
+body span{
+    font-size: 80px;
+}

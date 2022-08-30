@@ -1,0 +1,17 @@
+#select {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+#select button{
+    width: 450px;
+    height: 100px;
+    font-size: 40px;
+    border-radius: 0.5em;
+    background-color:rgb(208, 255, 232);
+  }
+
+#select {
+    line-height: 160px;
+}

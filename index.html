@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <script type="text/javascript" defer src="js/utils/board.js"></script>
+    <script type="text/javascript" defer src="js/utils/rule.js"></script>
+    <script type="text/javascript" defer src="js/utils/state.js"></script>
+    <script type="text/javascript" defer src="js/utils/omok.js"></script>
+    <script type="text/javascript" defer src="js/utils/pv_mcts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script type="text/javascript" defer src="js/init.js"></script>
+    <script type="text/javascript" defer src="js/game/init.js"></script>
+
+    <script type="text/javascript" defer src="js/select.js"></script>
+    <script type="text/javascript" defer src="assets/assets.js"></script>
+    <script type="text/javascript" defer src="js/board.js"></script>
+    
+    <script type="text/javascript" defer src="js/game/play.js"></script>
+
+    <script type="text/javascript" defer src="js/select_rule.js"></script>
+
+    <script type="text/javascript" defer src="js/options.js"></script>
+    
+    <title>AI-Omok</title>
+</head>
+<body>
+    <span>오목 한판 하자</span>
+    <div id="options">
+        <button id="options-home">홈</button>
+        <button id="options-retry" hidden>다시하기</button>
+    </div>
+    <div id="select">
+        <button id="select-ai-black">AI(흑) vs Player(백)</button>
+        <br>
+        <button id="select-ai-white">Player(흑) vs AI(백)</button>
+        <br>
+        <button id="select-player">Player vs Player</button>
+    </div>
+    <div id="select-rule" hidden>
+        <button id="gomoku" disabled="disabled">Gomoku</button>
+        <br>
+        <button id="renju">Renju</button>
+    </div>
+    <div id="board" hidden></div>
+    <button id="put" hidden disabled="disabled">착수</button>
+</body>
+</html>

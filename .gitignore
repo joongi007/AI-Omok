@@ -1,0 +1,6 @@
+# directories
+train/__pycache__/
+
+# files
+train/games/**
+train/data/**

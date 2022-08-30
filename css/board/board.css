@@ -1,0 +1,31 @@
+#board {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+#board button {
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  border: none;
+  padding: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#board button:hover {
+  z-index: -1;
+}
+
+.btn-hover:hover {
+  opacity: 0.3;
+  outline: dashed red;
+}
+
+.btn-hover:focus {
+  opacity: 1;
+  outline: dashed red;
+}
