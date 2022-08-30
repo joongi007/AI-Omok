@@ -4,6 +4,7 @@ let run = false;
 /** 플레이어의 추측 */
 async function guessOfPlayer(){
     put.removeAttribute("disabled");
+    retry.removeAttribute("disabled");
     while(run){
         await waitUserInput(); // 착수 버튼 클릭을 기다림
         if(!run) return;       // 진행상태가 아니라면 종료
@@ -11,6 +12,7 @@ async function guessOfPlayer(){
         if(legal_actions.includes(coord)) break;
     }
     put.setAttribute("disabled", "disabled");
+    retry.setAttribute("disabled", "disabled");
     return coord;
 }
 
@@ -22,7 +24,6 @@ async function guessOfAi(){
 
 /** 해당차례의 추측을 받아옴 */
 async function guess(){
-    retry.setAttribute("disabled", "disabled");
     let action;
     switch(selected_mode){
         case 0:         // AI 대전 ai가 흑돌
@@ -39,7 +40,6 @@ async function guess(){
             action = await guessOfPlayer();
             break;
     }
-    retry.removeAttribute("disabled");
     return action;
 }
 
