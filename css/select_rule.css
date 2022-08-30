@@ -1,0 +1,17 @@
+#select-rule {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+#select-rule button{
+    width: 450px;
+    height: 170px;
+    font-size: 50px;
+    border-radius: 0.5em;
+    background-color:rgb(208, 255, 232);
+  }
+
+#select-rule {
+    line-height: 230px;
+}
